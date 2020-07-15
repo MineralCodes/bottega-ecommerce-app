@@ -7,8 +7,8 @@ import reducers from "./reducers";
 
 import history from "./history";
 import Layout from "./components/layout";
-import SignIn from "./components/auth/sign-in";
-import SignUp from "./components/auth/sign-up";
+import SignIn from "./components/auth/signIn";
+import SignUp from "./components/auth/signUp";
 
 const createStoreWithMiddleware = applyMiddleware()(
 	compose(window.__REDUX_DEVTOOLS_EXTENSION__ ? window.__REDUX_DEVTOOLS_EXTENSION__() : (f) => f)(
