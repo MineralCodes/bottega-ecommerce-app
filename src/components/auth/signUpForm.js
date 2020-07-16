@@ -8,21 +8,18 @@ import Details from "../details";
 class SignUpForm extends Component {
 	render() {
 		const { className, handleSubmit } = this.props;
-		const links = [
+		const info = [
 			{
 				_id: 0,
-				title: "Not registered? Create account here",
-				onClick: () => history.push("/signup"),
+				title: "At least 6 characters",
 			},
 			{
 				_id: 1,
-				title: "Forgot account email?",
-				onClick: () => console.log("forgot email"),
+				title: "At least one number",
 			},
 			{
 				_id: 2,
-				title: "Forgot password?",
-				onClick: () => console.log("forgot password"),
+				title: "At least one symbol",
 			},
 		];
 
@@ -66,16 +63,16 @@ class SignUpForm extends Component {
 
 				<Field
 					className="sign-up-form__login"
-					onClick={() => console.log("tryna submit")}
+					onClick={() => history.push("/account")}
 					type="submit"
-					title="Login"
+					title="Sign Up"
 					name="login"
 					component={FormButton}
 				/>
 
 				<Field
 					className="sign-up-form__back"
-					onClick={() => console.log("tryna go back")}
+					onClick={() => history.push("/")}
 					type="button"
 					title="Back"
 					name="back"
@@ -83,7 +80,11 @@ class SignUpForm extends Component {
 					component={FormButton}
 				/>
 
-				<Details className="sign-up-form__details" title="Quick Links" links={links} />
+				<Details
+					className="sign-up-form__details"
+					title="Password requirements"
+					info={info}
+				/>
 			</form>
 		);
 	}

@@ -10,9 +10,9 @@ class SignUp extends Component {
 
 	render() {
 		return (
-			<div className="sign-in">
-				<PageTitle className="sign-in__title" title="Login" />
-				<SignUpForm onSubmit={this.onSubmit} className="sign-in__form" />
+			<div className="sign-up">
+				<PageTitle className="sign-up__title" title="Login" />
+				<SignUpForm onSubmit={this.onSubmit} className="sign-up__form" />
 			</div>
 		);
 	}
