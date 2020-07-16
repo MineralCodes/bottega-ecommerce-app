@@ -7,6 +7,7 @@ import reducers from "./reducers";
 
 import history from "./history";
 import Layout from "./components/layout";
+import Shop from "./components/shop";
 import SignIn from "./components/auth/signIn";
 import SignUp from "./components/auth/signUp";
 
@@ -24,8 +25,8 @@ function main() {
 			<Router history={history}>
 				<Layout>
 					<Switch>
-						<Route exact path="/" component={SignIn} />
-
+						<Route exact path="/" component={Shop} />
+						<Route path="/signin" component={SignIn} />
 						<Route path="/signup" component={SignUp} />
 					</Switch>
 				</Layout>
