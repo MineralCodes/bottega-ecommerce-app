@@ -13,4 +13,9 @@ html {
 body {
 	font-family: "Open Sans", sans-serif;
 	color: #808080;
+
+	a,
+	button {
+		cursor: pointer;
+	}
 }
