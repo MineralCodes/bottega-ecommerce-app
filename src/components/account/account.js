@@ -1,11 +1,52 @@
 import React, { Component } from "react";
+import { connect } from "react-redux";
+import * as actions from "../../actions";
 
-export default class Account extends Component {
+import AccountInformation from "./accountInformation";
+import PurchaseHistory from "./purchaseHistory";
+
+class Account extends Component {
+	componentDidMount() {
+		const navbarLinks = [
+			{
+				title: "purchase history",
+				active: false,
+				component: <PurchaseHistory />,
+			},
+			{
+				title: "account information",
+				active: true,
+				component: <AccountInformation />,
+			},
+		];
+
+		this.props.setHeaderLinks([]);
+		this.props.setNavbarLinks(navbarLinks);
+	}
+
 	renderContent() {
-		return <h1>content stuffs</h1>;
+		let jsx;
+
+		if (this.props.navbarLinks) {
+			this.props.navbarLinks.map((link) => {
+				if (link.active) {
+					jsx = link.component;
+				}
+			});
+		}
+
+		return jsx;
 	}
 
 	render() {
 		return <div>{this.renderContent()}</div>;
 	}
 }
+
+function mapStateToProps(state) {
+	const { headerLinks, navbarLinks } = state.headerNavbar;
+	return { headerLinks, navbarLinks };
+}
+Account = connect(mapStateToProps, actions)(Account);
+
+export default Account;
