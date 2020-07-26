@@ -10,6 +10,7 @@ import Layout from "./components/layout";
 import Shop from "./components/shop";
 import SignIn from "./components/auth/signIn";
 import SignUp from "./components/auth/signUp";
+import Account from "./components/account/account";
 
 const createStoreWithMiddleware = applyMiddleware()(
 	compose(window.__REDUX_DEVTOOLS_EXTENSION__ ? window.__REDUX_DEVTOOLS_EXTENSION__() : (f) => f)(
@@ -28,6 +29,8 @@ function main() {
 						<Route exact path="/" component={Shop} />
 						<Route path="/signin" component={SignIn} />
 						<Route path="/signup" component={SignUp} />
+
+						<Route path="/account" component={Account} />
 					</Switch>
 				</Layout>
 			</Router>
