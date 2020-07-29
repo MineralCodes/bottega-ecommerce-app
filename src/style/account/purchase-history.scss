@@ -3,12 +3,23 @@
 		border-bottom: 1px solid #cccccc;
 	}
 
+	&__content {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr;
+		margin: 37px 0;
+	}
+
 	&__bottom-border {
 		border-bottom: 1px solid #f2f2f2;
 	}
 }
 
-.purhcases {
+.purchases {
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: repeat(auto-fit, 80px);
+	width: 360px;
 }
 
 .purchase-detail {
