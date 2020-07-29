@@ -15,7 +15,7 @@ export function fetchUserPurchases() {
 				_id: 0,
 				total: 8.02,
 				orderNumber: "AXF59812F",
-				orderDate: new Date(),
+				orderDate: new Date().toDateString(),
 				creditCard: "-0000",
 				user: {
 					name: "Jordan Hudgens",
@@ -26,7 +26,7 @@ export function fetchUserPurchases() {
 				_id: 1,
 				total: 18.3,
 				orderNumber: "AXF86952F",
-				orderDate: new Date(),
+				orderDate: new Date().toDateString(),
 				creditCard: "-0000",
 				user: {
 					name: "Micah Gilbertson",
@@ -37,7 +37,7 @@ export function fetchUserPurchases() {
 				_id: 2,
 				total: 11.0,
 				orderNumber: "AXF795685F",
-				orderDate: new Date(),
+				orderDate: new Date().toDateString(),
 				creditCard: "-0000",
 				user: {
 					name: "Jordan Hudgens",
@@ -48,7 +48,7 @@ export function fetchUserPurchases() {
 				_id: 3,
 				total: 13.82,
 				orderNumber: "AXF3569872F",
-				orderDate: new Date(),
+				orderDate: new Date().toDateString(),
 				creditCard: "-0000",
 				user: {
 					name: "Jordan Hudgens",
@@ -59,7 +59,7 @@ export function fetchUserPurchases() {
 				_id: 4,
 				total: 3.89,
 				orderNumber: "AXF875698F",
-				orderDate: new Date(),
+				orderDate: new Date().toDateString(),
 				creditCard: "-0000",
 				user: {
 					name: "Max Nelson",
@@ -70,7 +70,7 @@ export function fetchUserPurchases() {
 				_id: 5,
 				total: 6.79,
 				orderNumber: "AXF971563F",
-				orderDate: new Date(),
+				orderDate: new Date().toDateString(),
 				creditCard: "-0000",
 				user: {
 					name: "Kristine Hudgens",
@@ -81,7 +81,7 @@ export function fetchUserPurchases() {
 				_id: 6,
 				total: 42.24,
 				orderNumber: "AXF975644F",
-				orderDate: new Date(),
+				orderDate: new Date().toDateString(),
 				creditCard: "-0000",
 				user: {
 					name: "Arthur Dent",
@@ -92,7 +92,7 @@ export function fetchUserPurchases() {
 				_id: 7,
 				total: 26.99,
 				orderNumber: "AXF978564F",
-				orderDate: new Date(),
+				orderDate: new Date().toDateString(),
 				creditCard: "-0000",
 				user: {
 					name: "Jean Picard",
