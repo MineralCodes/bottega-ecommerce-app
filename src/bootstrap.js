@@ -7,15 +7,17 @@ import reducers from "./reducers";
 
 import history from "./history";
 import Layout from "./components/layout";
-import Shop from "./components/shop";
+import Shop from "./components/shop/shop";
 import SignIn from "./components/auth/signIn";
 import SignUp from "./components/auth/signUp";
 import Account from "./components/account/account";
 
 const createStoreWithMiddleware = applyMiddleware()(
-	compose(window.__REDUX_DEVTOOLS_EXTENSION__ ? window.__REDUX_DEVTOOLS_EXTENSION__() : (f) => f)(
-		createStore
-	)
+	compose(
+		window.__REDUX_DEVTOOLS_EXTENSION__
+			? window.__REDUX_DEVTOOLS_EXTENSION__()
+			: (f) => f
+	)(createStore)
 );
 
 import "./style/main.scss";
@@ -29,8 +31,8 @@ function main() {
 						<Route exact path="/" component={Shop} />
 						<Route path="/signin" component={SignIn} />
 						<Route path="/signup" component={SignUp} />
-
 						<Route path="/account" component={Account} />
+						<Route exact path="/shop" component={Shop} />
 					</Switch>
 				</Layout>
 			</Router>
