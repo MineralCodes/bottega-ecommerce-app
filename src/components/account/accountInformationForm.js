@@ -104,6 +104,35 @@ class AccountInformationForm extends Component {
 							name="confirm"
 							component={FormInput}
 						/>,
+						<div
+							key={3}
+							className="account-information-form__line"
+						></div>,
+
+						<Field
+							key={4}
+							className="account-information-form__update-information"
+							onClick={() =>
+								this.setState({ showPasswords: false })
+							}
+							type="submit"
+							title="Update Information"
+							name="update-information"
+							component={FormButton}
+						/>,
+
+						<Field
+							key={5}
+							className="account-information-form__cancel"
+							onClick={() =>
+								this.setState({ showPasswords: false })
+							}
+							type="button"
+							title="Cancel"
+							name="cancel"
+							short={true}
+							component={FormButton}
+						/>,
 					]
 				) : (
 					<Field
