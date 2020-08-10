@@ -30,7 +30,24 @@ class Shop extends Component {
 	}
 
 	render() {
-		return <div className="shop">This is the shop/homepage</div>;
+		return (
+			<div className="shop">
+				<div className="shop__products">
+					{this.props.filteredProducts.map((product) => {
+						return (
+							<div className="shop-product" key={product._id}>
+								<div className="shop-product__title">
+									{product.title}
+								</div>
+								<div className="shop-product__description">
+									{product.description}
+								</div>
+							</div>
+						);
+					})}
+				</div>
+			</div>
+		);
 
 		{
 			/*
@@ -43,8 +60,8 @@ class Shop extends Component {
 }
 
 function mapStateToProps(state) {
-	const { categories } = state.shop;
-	return { categories };
+	const { categories, filteredProducts } = state.shop;
+	return { categories, filteredProducts };
 }
 
 Shop = connect(mapStateToProps, actions)(Shop);
