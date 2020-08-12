@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 import * as actions from "../../actions";
 
 import SearchBar from "./shopSearchBar";
+import ShopProduct from "./shopProducts";
 
 class Shop extends Component {
 	onSubmit = (fields) => {
@@ -44,28 +45,11 @@ class Shop extends Component {
 				/>
 				<div className="shop__products">
 					{this.props.filteredProducts.map((product) => {
-						return (
-							<div className="shop-product" key={product._id}>
-								<div className="shop-product__title">
-									{product.title}
-								</div>
-								<div className="shop-product__description">
-									{product.description}
-								</div>
-							</div>
-						);
+						return <ShopProduct {...product} key={product._id} />;
 					})}
 				</div>
 			</div>
 		);
-
-		{
-			/*
-		searchbar
-		shop products
-		cart button
-	*/
-		}
 	}
 }
 
