@@ -3,12 +3,15 @@ import { reduxForm, Field } from "redux-form";
 
 function FormSearchBar(props) {
 	return (
-		<input
-			className={`${props.className} form-search-bar`}
-			{...props.input}
-			type="text"
-			placeholder={props.placeholder}
-		/>
+		<div className="search-bar-grid">
+			<i class="fas fa-search search-bar-grid__icon"></i>
+			<input
+				className={`${props.className} form-search-bar search-bar-grid__field`}
+				{...props.input}
+				type="text"
+				placeholder={`${props.placeholder}`}
+			/>
+		</div>
 	);
 }
 

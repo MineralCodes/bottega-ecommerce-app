@@ -2,13 +2,20 @@
 @import "base.scss";
 @import "layout.scss";
 @import "header-navbar.scss";
+
+//AUTH
 @import "auth/signin.scss";
 @import "auth/signup.scss";
 @import "page-title.scss";
 @import "form-fields.scss";
 @import "details.scss";
+
+//ACCOUNT
 @import "account/account.scss";
 @import "account/purchase-history.scss";
 @import "account/account-information.scss";
 @import "account/account-information-form.scss";
+
+//SHOP
 @import "shop/shop.scss";
+@import "shop/shop-search-bar.scss";
