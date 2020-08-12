@@ -5,9 +5,9 @@ import * as actions from "../../actions";
 import SearchBar from "./shopSearchBar";
 
 class Shop extends Component {
-	onSubmit(fields) {
-		console.log(fields);
-	}
+	onSubmit = (fields) => {
+		this.props.filterProductsWithQuery(fields);
+	};
 
 	componentDidMount() {
 		const headerLinks = [

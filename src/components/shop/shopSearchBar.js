@@ -21,7 +21,7 @@ class SearchBar extends Component {
 				className={`${className} shop-search-bar`}
 			>
 				<Field
-					name="shop-search-bar"
+					name="shopSearchBar"
 					className="shop-search-bar__form-search-bar"
 					placeholder="Search"
 					component={FormSearchBar}
