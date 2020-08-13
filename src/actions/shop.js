@@ -71,7 +71,7 @@ export function fetchShopProducts() {
 				_id: 0,
 				title: "Javascript in the browser",
 				description:
-					"Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sunt, vero magnam, modi labore corporis qui veniam, ipsam error tenetur itaque. Consequuntur suscipit nisi voluptate fugiat natus sit magnam omnis facere cum, nobis, ea doloremque velit, dolore quas nostrum? Magni nihil eos facere molestiae unde natus ullam! Mollitia, expedita neque.",
+					"Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sunt, vero magnam, modi labore corporis qui veniam, ipsam error tenetur itaque. Consequuntur suscipit nisi voluptate fugiat natus sit magnam omnis facere cum, nobis, ea doloremque velit, dolore quas nostrum?",
 				price: 1.99,
 				belongsTo: [0, 1],
 			},
@@ -79,7 +79,7 @@ export function fetchShopProducts() {
 				_id: 1,
 				title: "Graph Database",
 				description:
-					"Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sunt, vero magnam, modi labore corporis qui veniam, ipsam error tenetur itaque. Consequuntur suscipit nisi voluptate fugiat natus sit magnam omnis facere cum, nobis, ea doloremque velit, dolore quas nostrum? Magni nihil eos facere molestiae unde natus ullam! Mollitia, expedita neque.",
+					"Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sunt, vero magnam, modi labore corporis qui veniam, ipsam error tenetur itaque. Consequuntur suscipit nisi voluptate fugiat natus sit magnam omnis facere cum, nobis, ea doloremque velit, dolore quas nostrum?",
 				price: 1.99,
 				belongsTo: [0, 6],
 			},
@@ -87,7 +87,7 @@ export function fetchShopProducts() {
 				_id: 2,
 				title: "Full Stack Development",
 				description:
-					"Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sunt, vero magnam, modi labore corporis qui veniam, ipsam error tenetur itaque. Consequuntur suscipit nisi voluptate fugiat natus sit magnam omnis facere cum, nobis, ea doloremque velit, dolore quas nostrum? Magni nihil eos facere molestiae unde natus ullam! Mollitia, expedita neque.",
+					"Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sunt, vero magnam, modi labore corporis qui veniam, ipsam error tenetur itaque. Consequuntur suscipit nisi voluptate fugiat natus sit magnam omnis facere cum, nobis, ea doloremque velit, dolore quas nostrum?",
 				price: 1.99,
 				belongsTo: [0, 1, 4],
 			},
@@ -95,7 +95,7 @@ export function fetchShopProducts() {
 				_id: 3,
 				title: "Javascript Development",
 				description:
-					"Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sunt, vero magnam, modi labore corporis qui veniam, ipsam error tenetur itaque. Consequuntur suscipit nisi voluptate fugiat natus sit magnam omnis facere cum, nobis, ea doloremque velit, dolore quas nostrum? Magni nihil eos facere molestiae unde natus ullam! Mollitia, expedita neque.",
+					"Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sunt, vero magnam, modi labore corporis qui veniam, ipsam error tenetur itaque. Consequuntur suscipit nisi voluptate fugiat natus sit magnam omnis facere cum, nobis, ea doloremque velit, dolore quas nostrum?",
 				price: 1.99,
 				belongsTo: [0, 1],
 			},
@@ -103,7 +103,7 @@ export function fetchShopProducts() {
 				_id: 4,
 				title: "User Interface Design",
 				description:
-					"Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sunt, vero magnam, modi labore corporis qui veniam, ipsam error tenetur itaque. Consequuntur suscipit nisi voluptate fugiat natus sit magnam omnis facere cum, nobis, ea doloremque velit, dolore quas nostrum? Magni nihil eos facere molestiae unde natus ullam! Mollitia, expedita neque.",
+					"Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sunt, vero magnam, modi labore corporis qui veniam, ipsam error tenetur itaque. Consequuntur suscipit nisi voluptate fugiat natus sit magnam omnis facere cum, nobis, ea doloremque velit, dolore quas nostrum?",
 				price: 1.99,
 				belongsTo: [0, 2, 5],
 			},
@@ -111,7 +111,7 @@ export function fetchShopProducts() {
 				_id: 5,
 				title: "User Experience Design",
 				description:
-					"Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sunt, vero magnam, modi labore corporis qui veniam, ipsam error tenetur itaque. Consequuntur suscipit nisi voluptate fugiat natus sit magnam omnis facere cum, nobis, ea doloremque velit, dolore quas nostrum? Magni nihil eos facere molestiae unde natus ullam! Mollitia, expedita neque.",
+					"Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sunt, vero magnam, modi labore corporis qui veniam, ipsam error tenetur itaque. Consequuntur suscipit nisi voluptate fugiat natus sit magnam omnis facere cum, nobis, ea doloremque velit, dolore quas nostrum?",
 				price: 1.99,
 				belongsTo: [0, 2],
 			},
@@ -119,7 +119,7 @@ export function fetchShopProducts() {
 				_id: 6,
 				title: "Advanced Object Oriented Programming",
 				description:
-					"Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sunt, vero magnam, modi labore corporis qui veniam, ipsam error tenetur itaque. Consequuntur suscipit nisi voluptate fugiat natus sit magnam omnis facere cum, nobis, ea doloremque velit, dolore quas nostrum? Magni nihil eos facere molestiae unde natus ullam! Mollitia, expedita neque.",
+					"Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sunt, vero magnam, modi labore corporis qui veniam, ipsam error tenetur itaque. Consequuntur suscipit nisi voluptate fugiat natus sit magnam omnis facere cum, nobis, ea doloremque velit, dolore quas nostrum?",
 				price: 1.99,
 				belongsTo: [0, 4, 6],
 			},
