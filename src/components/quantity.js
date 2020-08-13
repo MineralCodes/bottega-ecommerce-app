@@ -5,7 +5,7 @@ class QuantityCounter extends Component {
 		const { className, quantity } = this.props;
 		return (
 			<div className="quantity">
-				<div className="quantiy__count">{quantity}</div>
+				<div className="quantity__count">{quantity}</div>
 				<div className="quantity__plus">
 					<i className="fas fa-plus"></i>
 				</div>
