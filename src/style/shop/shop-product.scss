@@ -1,4 +1,58 @@
+// PLACE FRONT AND BACK ON TOP OF EACHOTHER
 .shop-product {
+	display: grid;
+	grid-template-columns: 1/-1;
+	grid-template-rows: 1/-1;
+
+	& > * {
+		grid-row: 1/-1;
+		grid-column: 1/-1;
+	}
+}
+
+//CARD FLIP
+.shop-product {
+	perspective: 150rem;
+	-moz-perspective: 150rem;
+
+	&__front,
+	&__back {
+		backface-visibility: hidden;
+		transition: all 0.4s ease-in-out;
+	}
+
+	&__back {
+		transform: rotateY(180deg);
+	}
+
+	&:hover &__front {
+		transform: rotateY(-180deg);
+	}
+
+	&:hover &__back {
+		transform: rotateY(0deg);
+	}
+}
+
+.shop-product__front {
+	height: 314px;
+	width: 240px;
+
+	display: grid;
+	justify-items: center;
+	align-items: center;
+
+	&__image {
+	}
+
+	&__title {
+		color: #333;
+		font-size: 18px;
+		font-family: "Titillium Web";
+	}
+}
+
+.shop-product__back {
 	background-color: white;
 	height: 314px;
 	width: 240px;
