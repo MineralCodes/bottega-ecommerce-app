@@ -4,6 +4,7 @@ import * as actions from "../../actions";
 
 import SearchBar from "./shopSearchBar";
 import ShopProduct from "./shopProducts";
+import ShopCart from "./shopCart";
 
 class Shop extends Component {
 	onSubmit = (fields) => {
@@ -48,6 +49,7 @@ class Shop extends Component {
 						return <ShopProduct {...product} key={product._id} />;
 					})}
 				</div>
+				<ShopCart className="shop__cart" />
 			</div>
 		);
 	}
