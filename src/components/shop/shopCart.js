@@ -22,8 +22,9 @@ function CartContent({ className, products }) {
 	);
 }
 
-function CartFooter(className, products) {
+function CartFooter({ className, products }) {
 	const price = 7.96;
+	console.log("footer classname", className);
 	return (
 		<div className={`${className} cart-footer`}>
 			<a className="cart-footer__checkout">Checkout</a>
@@ -41,7 +42,24 @@ class ShopCart extends Component {
 				<CartButton className="shop-cart__toggle" icon="times" />
 				<CartContent
 					className="shop-cart__content"
-					products={[1, 2, 3, 4]}
+					products={[
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+					]}
 				/>
 			</div>
 		);
