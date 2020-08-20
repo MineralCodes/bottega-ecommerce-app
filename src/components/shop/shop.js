@@ -7,6 +7,14 @@ import ShopProduct from "./shopProducts";
 import ShopCart from "./shopCart";
 
 class Shop extends Component {
+	constructor() {
+		super();
+
+		this.state = {
+			showCart: true,
+		};
+	}
+
 	onSubmit = (fields) => {
 		this.props.filterProductsWithQuery(fields);
 	};
@@ -49,7 +57,7 @@ class Shop extends Component {
 						return <ShopProduct {...product} key={product._id} />;
 					})}
 				</div>
-				<ShopCart className="shop__cart" />
+				{this.state.showCart ? <ShopCart className="shop__cart" /> : ""}
 			</div>
 		);
 	}
