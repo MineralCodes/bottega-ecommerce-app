@@ -5,18 +5,31 @@ import * as actions from "../../actions";
 import SearchBar from "./shopSearchBar";
 import ShopProduct from "./shopProducts";
 import ShopCart from "./shopCart";
+import CartButton from "./cartButton";
 
 class Shop extends Component {
 	constructor() {
 		super();
 
 		this.state = {
-			showCart: true,
+			showCart: false,
 		};
 	}
 
 	onSubmit = (fields) => {
 		this.props.filterProductsWithQuery(fields);
+	};
+
+	handleViewCart = () => {
+		let cart = document.getElementById("shop-cart");
+
+		if (cart.classList.contains("cart-hidden")) {
+			cart.classList.remove("cart-hidden");
+			this.setState({ showCart: true });
+		} else {
+			cart.classList.add("cart-hidden");
+			this.setState({ showCart: false });
+		}
 	};
 
 	componentDidMount() {
@@ -57,7 +70,13 @@ class Shop extends Component {
 						return <ShopProduct {...product} key={product._id} />;
 					})}
 				</div>
-				{this.state.showCart ? <ShopCart className="shop__cart" /> : ""}
+				<ShopCart className="shop__cart" />
+
+				<CartButton
+					onClick={() => this.handleViewCart()}
+					className="shop__cart-button"
+					icon={this.state.showCart ? "times" : "cart-plus"}
+				/>
 			</div>
 		);
 	}

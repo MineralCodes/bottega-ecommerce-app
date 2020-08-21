@@ -3,6 +3,16 @@ import Quantity from "../quantity";
 import GreenPriceTag from "../greenPriceTag";
 
 class ShopProduct extends Component {
+	handleAddToCart = () => {
+		let cart = document.getElementById("shop-cart");
+
+		if (cart.classList.contains("cart-hidden")) {
+			cart.classList.remove("cart-hidden");
+		} else {
+			cart.classList.add("cart-hidden");
+		}
+	};
+
 	render() {
 		const { _id, title, description, price } = this.props;
 		return (
@@ -27,9 +37,12 @@ class ShopProduct extends Component {
 						className="shop-product__back__quantity"
 						quantity={1}
 					/>
-					<div className="shop-product__back__add-to-cart">
+					<a
+						className="shop-product__back__add-to-cart"
+						onClick={() => this.handleAddToCart()}
+					>
 						Add to Cart
-					</div>
+					</a>
 				</div>
 			</div>
 		);
