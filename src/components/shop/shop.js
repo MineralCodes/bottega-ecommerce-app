@@ -14,6 +14,8 @@ class Shop extends Component {
 		this.state = {
 			showCart: false,
 		};
+
+		//this.handleViewCart = this.handleViewCart.bind(this);
 	}
 
 	onSubmit = (fields) => {
@@ -68,7 +70,13 @@ class Shop extends Component {
 				/>
 				<div className="shop__products">
 					{this.props.filteredProducts.map((product) => {
-						return <ShopProduct {...product} key={product._id} />;
+						return (
+							<ShopProduct
+								{...product}
+								key={product._id}
+								cartFunction={this.handleViewCart}
+							/>
+						);
 					})}
 				</div>
 				<ShopCart className="shop__cart" />

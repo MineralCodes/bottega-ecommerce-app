@@ -8,29 +8,23 @@ import * as actions from "../../actions";
 
 class ShopProduct extends Component {
 	handleAddToCart = () => {
-		let cart = document.getElementById("shop-cart");
-
-		if (cart.classList.contains("cart-hidden")) {
-			cart.classList.remove("cart-hidden");
-			const {
-				_id,
-				title,
-				description,
-				price,
-				belongsTo,
-				imageUrl,
-			} = this.props;
-			this.props.addCartProduct({
-				_id,
-				title,
-				description,
-				price,
-				belongsTo,
-				imageUrl,
-			});
-		} else {
-			cart.classList.add("cart-hidden");
-		}
+		this.props.cartFunction();
+		const {
+			_id,
+			title,
+			description,
+			price,
+			belongsTo,
+			imageUrl,
+		} = this.props;
+		this.props.addCartProduct({
+			_id,
+			title,
+			description,
+			price,
+			belongsTo,
+			imageUrl,
+		});
 	};
 
 	render() {
