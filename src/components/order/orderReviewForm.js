@@ -13,9 +13,11 @@ class OrderReviewForm extends Component {
 				className={`${className} order-review-form`}
 				onSubmit={handleSubmit}
 			>
+				<div className="order-review-form__line"></div>
+
 				<Field
 					className="order-review-form__proceed"
-					onClick={() => history.push("/account")}
+					onClick={() => history.push("/signin")}
 					type="submit"
 					title="Proceed To Checkout"
 					name="proceed"
