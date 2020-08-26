@@ -11,6 +11,7 @@ import Shop from "./components/shop/shop";
 import SignIn from "./components/auth/signIn";
 import SignUp from "./components/auth/signUp";
 import Account from "./components/account/account";
+import OrderReview from "./components/order/orderReview";
 
 const createStoreWithMiddleware = applyMiddleware()(
 	compose(
@@ -33,6 +34,11 @@ function main() {
 						<Route path="/signup" component={SignUp} />
 						<Route path="/account" component={Account} />
 						<Route exact path="/shop" component={Shop} />
+						<Route
+							exact
+							path="/order/review"
+							component={OrderReview}
+						/>
 					</Switch>
 				</Layout>
 			</Router>
