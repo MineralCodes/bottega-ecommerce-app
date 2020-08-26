@@ -21,8 +21,10 @@ function CartContent({ className, products }) {
 }
 
 function CartFooter({ className, products }) {
-	const price = 7.96;
-	console.log("footer classname", className);
+	let subtotal = 0;
+	products.map((cartProduct) => {
+		subtotal += cartProduct.quantity * cartProduct.product.price;
+	});
 	return (
 		<div className={`${className} cart-footer`}>
 			<a
@@ -32,7 +34,7 @@ function CartFooter({ className, products }) {
 				Checkout
 			</a>
 			<div className="cart-footer__subtotal">Subtotal</div>
-			<div className="cart-footer__price">{price}</div>
+			<div className="cart-footer__price">{subtotal.toFixed(2)}</div>
 		</div>
 	);
 }
@@ -59,11 +61,6 @@ class ShopCart extends Component {
 				id="shop-cart"
 				className={`${className} shop-cart cart-hidden`}
 			>
-				{/* <CartButton
-					className="shop-cart__toggle"
-					icon="times"
-					onClick={() => this.handleAddToCart()}
-				/> */}
 				<CartContent
 					className="shop-cart__content"
 					products={this.props.cartProducts}

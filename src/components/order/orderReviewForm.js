@@ -8,7 +8,9 @@ import GreenPriceTag from "../greenPriceTag";
 
 class OrderReviewForm extends Component {
 	render() {
-		const { className, handleSubmit } = this.props;
+		const { className, handleSubmit, subtotal } = this.props;
+		const tax = subtotal * 0.08;
+		const shipping = 0.0;
 
 		return (
 			<form
@@ -51,16 +53,22 @@ class OrderReviewForm extends Component {
 				<div className="order-review-form__details review-details">
 					<div className="review-details__subtotal review-detail">
 						<div className="review-detail__title">Subtotal</div>
-						<div className="review-detail__price">$7.99</div>
+						<div className="review-detail__price">
+							${subtotal.toFixed(2)}
+						</div>
 					</div>
 					<div className="review-details__tax review-detail">
 						<div className="review-detail__title">Tax</div>
-						<div className="review-detail__price">$0.16</div>
+						<div className="review-detail__price">
+							${tax.toFixed(2)}
+						</div>
 					</div>
 
 					<div className="review-details__shipping review-detail">
 						<div className="review-detail__title">Shipping</div>
-						<div className="review-detail__price">$0.00</div>
+						<div className="review-detail__price">
+							${shipping.toFixed(2)}
+						</div>
 					</div>
 
 					<div className="review-details__total review-detail">
@@ -68,7 +76,7 @@ class OrderReviewForm extends Component {
 						<div className="review-detail__price">
 							<GreenPriceTag
 								className="review-detail__total__price"
-								title="8.15"
+								title={(subtotal + tax + shipping).toFixed(2)}
 							/>
 						</div>
 					</div>
