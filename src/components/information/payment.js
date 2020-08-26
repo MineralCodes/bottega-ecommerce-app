@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import * as actions from "../../actions";
 
-// import SignInForm from "./signInForm";
+import PaymentForm from "./paymentForm";
 import PageTitle from "../pageTitle";
 
 class Payment extends Component {
@@ -22,10 +22,10 @@ class Payment extends Component {
 					className="sign-in__title"
 					title="Payment Information"
 				/>
-				{/* <PaymentForm
+				<PaymentForm
 					onSubmit={this.onSubmit}
 					className="sign-in__form"
-				/> */}
+				/>
 			</div>
 		);
 	}
