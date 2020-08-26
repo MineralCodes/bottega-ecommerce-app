@@ -4,6 +4,7 @@ import history from "../../history";
 
 import { FormButton } from "../formFields";
 import OrderReviewProducts from "./orderReviewProducts";
+import GreenPriceTag from "../greenPriceTag";
 
 class OrderReviewForm extends Component {
 	render() {
@@ -46,6 +47,32 @@ class OrderReviewForm extends Component {
 					short={true}
 					component={FormButton}
 				/>
+
+				<div className="order-review-form__details review-details">
+					<div className="review-details__subtotal review-detail">
+						<div className="review-detail__title">Subtotal</div>
+						<div className="review-detail__price">$7.99</div>
+					</div>
+					<div className="review-details__tax review-detail">
+						<div className="review-detail__title">Tax</div>
+						<div className="review-detail__price">$0.16</div>
+					</div>
+
+					<div className="review-details__shipping review-detail">
+						<div className="review-detail__title">Shipping</div>
+						<div className="review-detail__price">$0.00</div>
+					</div>
+
+					<div className="review-details__total review-detail">
+						<div className="review-detail__title">Total</div>
+						<div className="review-detail__price">
+							<GreenPriceTag
+								className="review-detail__total__price"
+								title="8.15"
+							/>
+						</div>
+					</div>
+				</div>
 			</form>
 		);
 	}
