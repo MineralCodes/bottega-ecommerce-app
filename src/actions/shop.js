@@ -74,6 +74,7 @@ export function fetchShopProducts() {
 					"Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sunt, vero magnam, modi labore corporis qui veniam, ipsam error tenetur itaque. Consequuntur suscipit nisi voluptate fugiat natus sit magnam omnis facere cum, nobis, ea doloremque velit, dolore quas nostrum?",
 				price: 1.99,
 				belongsTo: [0, 1],
+				imageUrl: "http://via.placeholder.com/80x80",
 			},
 			{
 				_id: 1,
@@ -82,6 +83,7 @@ export function fetchShopProducts() {
 					"Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sunt, vero magnam, modi labore corporis qui veniam, ipsam error tenetur itaque. Consequuntur suscipit nisi voluptate fugiat natus sit magnam omnis facere cum, nobis, ea doloremque velit, dolore quas nostrum?",
 				price: 1.99,
 				belongsTo: [0, 6],
+				imageUrl: "http://via.placeholder.com/80x80",
 			},
 			{
 				_id: 2,
@@ -90,6 +92,7 @@ export function fetchShopProducts() {
 					"Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sunt, vero magnam, modi labore corporis qui veniam, ipsam error tenetur itaque. Consequuntur suscipit nisi voluptate fugiat natus sit magnam omnis facere cum, nobis, ea doloremque velit, dolore quas nostrum?",
 				price: 1.99,
 				belongsTo: [0, 1, 4],
+				imageUrl: "http://via.placeholder.com/80x80",
 			},
 			{
 				_id: 3,
@@ -98,6 +101,7 @@ export function fetchShopProducts() {
 					"Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sunt, vero magnam, modi labore corporis qui veniam, ipsam error tenetur itaque. Consequuntur suscipit nisi voluptate fugiat natus sit magnam omnis facere cum, nobis, ea doloremque velit, dolore quas nostrum?",
 				price: 1.99,
 				belongsTo: [0, 1],
+				imageUrl: "http://via.placeholder.com/80x80",
 			},
 			{
 				_id: 4,
@@ -106,6 +110,7 @@ export function fetchShopProducts() {
 					"Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sunt, vero magnam, modi labore corporis qui veniam, ipsam error tenetur itaque. Consequuntur suscipit nisi voluptate fugiat natus sit magnam omnis facere cum, nobis, ea doloremque velit, dolore quas nostrum?",
 				price: 1.99,
 				belongsTo: [0, 2, 5],
+				imageUrl: "http://via.placeholder.com/80x80",
 			},
 			{
 				_id: 5,
@@ -114,6 +119,7 @@ export function fetchShopProducts() {
 					"Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sunt, vero magnam, modi labore corporis qui veniam, ipsam error tenetur itaque. Consequuntur suscipit nisi voluptate fugiat natus sit magnam omnis facere cum, nobis, ea doloremque velit, dolore quas nostrum?",
 				price: 1.99,
 				belongsTo: [0, 2],
+				imageUrl: "http://via.placeholder.com/80x80",
 			},
 			{
 				_id: 6,
@@ -122,6 +128,7 @@ export function fetchShopProducts() {
 					"Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sunt, vero magnam, modi labore corporis qui veniam, ipsam error tenetur itaque. Consequuntur suscipit nisi voluptate fugiat natus sit magnam omnis facere cum, nobis, ea doloremque velit, dolore quas nostrum?",
 				price: 1.99,
 				belongsTo: [0, 4, 6],
+				imageUrl: "http://via.placeholder.com/80x80",
 			},
 		],
 	};
