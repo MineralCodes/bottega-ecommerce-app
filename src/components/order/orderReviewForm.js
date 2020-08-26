@@ -33,7 +33,7 @@ class OrderReviewForm extends Component {
 
 				<Field
 					className="order-review-form__proceed"
-					onClick={() => history.push("/signin")}
+					onClick={() => history.push("/information/shipping")}
 					type="submit"
 					title="Proceed To Checkout"
 					name="proceed"

@@ -4,7 +4,6 @@ import * as actions from "../../actions";
 import history from "../../history";
 
 import CartProduct from "./shopCartProduct";
-import CartButton from "./cartButton";
 
 function CartContent({ className, products }) {
 	let count = products.length;
