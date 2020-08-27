@@ -1,30 +1,60 @@
 .shipping {
+	grid-row: content-s/content-e;
+	grid-column: s/e;
+
 	&__form {
+		display: grid;
+		grid-template-rows:
+			[name-s] 64px [name-e] 35px [address-s] 64px [address-e city-s] 64px [city-e state-zip-s] 64px [state-zip-e line-s] minmax(
+				20px,
+				81px
+			)
+			[line-e buttons-s] 38px [buttons-e];
+		grid-template-columns: [back-s ] 137px [back-e space-s] 40px [space-e use-address-s] 1fr [use-address-e] 1fr;
+		grid-row-gap: 15px;
 	}
 }
 
 .shipping-form {
 	&__name {
+		grid-row: name-s/name-e;
 	}
 
 	&__address {
+		grid-row: address-s/address-e;
 	}
 
 	&__city {
+		grid-row: city-s/city-e;
 	}
 
-	&__state {
+	&__state,
+	&__zip {
+		grid-row: state-zip-s/state-zip-e;
+		grid-column: back-s;
+		input {
+			width: 200px;
+		}
 	}
 
 	&__zip {
+		transform: translateX(226px);
 	}
 
 	&__line {
+		grid-row: line-s/line-e;
+		grid-column: 1/-1;
+		border-bottom: 1px solid #ccc;
+		margin-bottom: 24px;
 	}
 
-	&__use-this-address {
+	&__use-address {
+		grid-row: buttons-s/buttons-e;
+		grid-column: use-address-s/use-address-e;
 	}
 
 	&__back {
+		grid-row: buttons-s/buttons-e;
+		grid-column: back-s/back-e;
 	}
 }
