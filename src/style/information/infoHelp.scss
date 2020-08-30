@@ -5,18 +5,48 @@
 }
 
 .info-title {
+	display: grid;
+	grid-template-rows: [s] 1fr [e];
+	grid-template-columns: [s] 1fr [m] 1fr [e];
+	align-items: center;
+
 	&__title {
 		font-size: 14px;
+
+		grid-row: s/e;
+		grid-column: s/m;
 	}
 
 	&__value {
 		color: $base-green;
 		font-size: 16px;
 		font-weight: 600;
+
+		grid-row: s/e;
+		grid-column: m/e;
 	}
 }
 
-.info-green-title {
-	font-weight: 600;
-	color: $base-green;
+.info-title-green {
+	.info-title {
+		&__title {
+			font-weight: 600;
+			color: $base-green;
+		}
+	}
+}
+
+.order-summary {
+	width: 240px;
+	height: 150px;
+
+	display: grid;
+	grid-template-rows: 30px 24px 24px 48px;
+	grid-row-gap: 5px;
+
+	.info-title {
+		&__value {
+			justify-self: end;
+		}
+	}
 }

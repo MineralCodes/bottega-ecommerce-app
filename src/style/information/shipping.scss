@@ -57,4 +57,10 @@
 		grid-row: buttons-s/buttons-e;
 		grid-column: back-s/back-e;
 	}
+
+	&__summary {
+		grid-row: name-s;
+		grid-column: use-address-e/-1;
+		justify-self: end;
+	}
 }

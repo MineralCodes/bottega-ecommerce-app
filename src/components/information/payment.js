@@ -17,14 +17,14 @@ class Payment extends Component {
 
 	render() {
 		return (
-			<div className="sign-in">
+			<div className="payment">
 				<PageTitle
-					className="sign-in__title"
+					className="payment__title"
 					title="Payment Information"
 				/>
 				<PaymentForm
 					onSubmit={this.onSubmit}
-					className="sign-in__form"
+					className="payment__form"
 				/>
 			</div>
 		);
