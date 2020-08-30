@@ -1,8 +1,9 @@
 import React, { Component } from "react";
+import { connect } from "react-redux";
 
 import { UnderlinedTitle } from "./infoHelp";
 
-export default class ShippingSummary extends Component {
+class ShippingSummary extends Component {
 	render() {
 		const { className, title } = this.props;
 		return (
@@ -12,12 +13,21 @@ export default class ShippingSummary extends Component {
 					title={title}
 				/>
 				<div className="shipping-info__name small-text">
-					Jordan Hudgens
+					{this.props.name}
 				</div>
 				<div className="shipping-info__address small-text">
-					123 example street
+					{this.props.address}
 				</div>
 			</div>
 		);
 	}
 }
+
+function mapStateToProps(state) {
+	const { name, address } = state.user.user;
+	return { name, address };
+}
+
+ShippingSummary = connect(mapStateToProps)(ShippingSummary);
+
+export default ShippingSummary;

@@ -27,7 +27,10 @@ class SignInForm extends Component {
 		];
 
 		return (
-			<form className={`${className} sign-in-form`} onSubmit={handleSubmit}>
+			<form
+				className={`${className} sign-in-form`}
+				onSubmit={handleSubmit}
+			>
 				<Field
 					className="sign-in-form__email"
 					type="email"
@@ -49,14 +52,18 @@ class SignInForm extends Component {
 
 				<Field
 					className="sign-in-form__login"
-					onClick={() => history.push("/account")}
+					onClick={() => this.props.onSubmit}
 					type="submit"
 					title="Login"
 					name="login"
 					component={FormButton}
 				/>
 
-				<Details className="sign-in-form__details" title="Quick Links" links={links} />
+				<Details
+					className="sign-in-form__details"
+					title="Quick Links"
+					links={links}
+				/>
 			</form>
 		);
 	}
