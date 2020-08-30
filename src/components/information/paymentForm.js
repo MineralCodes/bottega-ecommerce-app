@@ -3,6 +3,7 @@ import { reduxForm, Field } from "redux-form";
 import history from "../../history";
 
 import OrderSummary from "./orderSummary";
+import ShippingSummary from "./shippingSummary";
 
 import { FormInput, FormButton } from "../formFields";
 
@@ -73,6 +74,10 @@ class PaymentForm extends Component {
 				/>
 
 				<OrderSummary className="payment-form__summary" />
+				<ShippingSummary
+					className="payment-form__shipping-info"
+					title="Shipping To"
+				/>
 			</form>
 		);
 	}
